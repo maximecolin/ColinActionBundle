@@ -1,0 +1,29 @@
+{
+    "name": "colin/action-bundle",
+    "type": "symfony-bundle",
+    "description": "Provide configuration based generic actions.",
+    "keywords": ["colin", "maximecolin", "action", "admin", "crud", "bundle", "symfony"],
+    "homepage": "https://github.com/maximecolin/ColinActionBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxime Colin",
+            "homepage": "https://github.com/maximecolin"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "~2.5",
+        "symfony/form": "~2.5",
+        "knplabs/knp-paginator-bundle": "2.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Colin\\Bundle\\ActionBundle\\": "."
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
