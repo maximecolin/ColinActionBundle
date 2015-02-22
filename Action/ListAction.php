@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManager;
 
-class ListAction
+class ListAction implements ActionInterface
 {
     private $formFactory;
 

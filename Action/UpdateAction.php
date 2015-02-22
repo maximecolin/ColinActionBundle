@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Doctrine\ORM\EntityManager;
 
-class UpdateAction
+class UpdateAction implements ActionInterface
 {
     private $formFactory;
 

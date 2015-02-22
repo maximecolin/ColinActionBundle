@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManager;
 
-class DeleteAction
+class DeleteAction implements ActionInterface
 {
     private $formFactory;
 

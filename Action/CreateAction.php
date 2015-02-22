@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Doctrine\ORM\EntityManager;
 
-class CreateAction
+class CreateAction implements ActionInterface
 {
     private $formFactory;
 
