@@ -1,0 +1,48 @@
+services:
+    colin_action.routing.action_loader:
+        class: Colin\Bundle\ActionBundle\Routing\ActionLoader
+        tags:
+            - { name: routing.loader }
+    colin_action.action.create:
+        class: Colin\Bundle\ActionBundle\Action\CreateAction
+        abstract: true
+        arguments:
+            - @form.factory
+            - @templating
+            - @router
+            - @doctrine.orm.entity_manager
+            - {}
+    colin_action.action.update:
+        class: Colin\Bundle\ActionBundle\Action\UpdateAction
+        abstract: true
+        arguments:
+            - @form.factory
+            - @templating
+            - @router
+            - @doctrine.orm.entity_manager
+            - {}
+    colin_action.action.delete:
+        class: Colin\Bundle\ActionBundle\Action\DeleteAction
+        abstract: true
+        arguments:
+            - @form.factory
+            - @templating
+            - @router
+            - @doctrine.orm.entity_manager
+            - {}
+    colin_action.action.list:
+        class: Colin\Bundle\ActionBundle\Action\ListAction
+        abstract: true
+        arguments:
+            - @form.factory
+            - @templating
+            - @router
+            - @doctrine.orm.entity_manager
+            - {}
+    colin_action.action.read:
+        class: Colin\Bundle\ActionBundle\Action\ReadAction
+        abstract: true
+        arguments:
+            - @templating
+            - @doctrine.orm.entity_manager
+            - {}

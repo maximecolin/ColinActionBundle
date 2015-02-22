@@ -1,0 +1,3 @@
+ColinActionBundle:
+    resource: .
+    type: action
